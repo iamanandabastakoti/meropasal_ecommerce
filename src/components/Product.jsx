@@ -8,7 +8,7 @@ const Product = ({image, product, category, size, color, total}) => {
     }
 
     const removeItem = () => {
-        count > 0? setCount(count => count-1): count=0;
+         setCount(count => count > 0?count-1: count=0);
     }
 
     return (
